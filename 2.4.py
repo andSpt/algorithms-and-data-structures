@@ -5,7 +5,7 @@ from collections import deque
 class MaxStack:
     def __init__(self):
         self.stack = deque()
-        self.max_stack = []
+        self.max_stack = deque()
 
     def push(self, value):
         self.stack.append(value)
@@ -38,27 +38,3 @@ for _ in range(quantity):
         max_stack.pop()
     elif data[0] == 'max':
         print(max_stack.get_max())
-
-
-# import sys
-# from collections import deque
-#
-# maximum = 0
-#
-# quantity = int(sys.stdin.readline())
-# stack = deque()
-#
-# for _ in range(quantity):
-#     data = tuple(sys.stdin.readline().split())
-#     if len(data) == 2:
-#         num = int(data[1])
-#         stack.append(num)
-#         if num > maximum:
-#             maximum = num
-#     else:
-#         if data[0] == 'pop':
-#             del_num = stack.pop()
-#             if del_num == maximum:
-#                 maximum = max(stack)
-#         elif data[0] == 'max':
-#             print(maximum)
