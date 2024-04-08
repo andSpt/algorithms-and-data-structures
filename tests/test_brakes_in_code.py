@@ -1,6 +1,6 @@
 import pytest
 
-from brakes_in_code import check_brackets
+from structures.brakes_in_code import check_brackets
 
 
 @pytest.mark.parametrize('string, expected_result', [
