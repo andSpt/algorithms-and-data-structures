@@ -1,16 +1,14 @@
 def get_optimal_points(list_segments):
-    points = []
-    sorted_list_segments: list = sorted(list_segments, key=lambda x: x[1])
+    sorted_list_segments: list = sorted(list_segments, key=lambda x: (x[1], x[0]))
     current_point = sorted_list_segments[0][1]
-    points.append(current_point)
+    optimal_points = [current_point]
 
-    for segment in sorted_list_segments:
-        start, end = segment
-        if current_point < start or current_point > end:
+    for start, end in sorted_list_segments[1:]:
+        if start > current_point:
             current_point = end
-            points.append(current_point)
+            optimal_points.append(current_point)
 
-    return points
+    return optimal_points
 
 
 if __name__ == "__main__":
