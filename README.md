@@ -1,7 +1,7 @@
 _****_Курсы по алгоритмам и структурам данных от Computer Science центр_****_
 
 # "Алгоритмы: теория и практика. Методы" 
-курс на stepik.org: [https://stepik.org/course/217/info]()
+[этот курс на stepik.org](https://stepik.org/course/217/info)
 
 Решение задач находится в директории methods, каждый модуль - отдельная задача.
 
@@ -383,7 +383,7 @@ m целых чисел — координаты точек. Все коорди
 
 
 # "Алгоритмы: теория и практика. Структуры данных" 
-курс на stepik.org: [https://stepik.org/course/1547/info]()
+[этот курс на stepik.org](https://stepik.org/course/1547/info)
 
 Условия задач в файле statements.pdf
 [Скачать документ](statements.pdf)
